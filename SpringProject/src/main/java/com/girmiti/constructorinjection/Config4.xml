@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> -->
+
+
+
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+
+
+	<bean class="com.girmiti.constructorinjection.Dept" name="refdept"
+		c:dname="sales" />
+	<bean class="com.girmiti.constructorinjection.Emp" name="refemp">
+		<constructor-arg value="mr.vijay"></constructor-arg>
+		<constructor-arg value="1005"></constructor-arg>
+		<constructor-arg value="8765"></constructor-arg>
+		<constructor-arg ref="refdept"></constructor-arg>
+	</bean>
+
+	<!-- <bean class="com.girmiti.constructorinjection.Emp" name="emp1" c:empname="ajay" 
+		c:eid="12" c:esal="234" /> -->
+
+
+	<!-- <bean class="com.girmiti.constructorinjection.Emp" name="emp1"> <constructor-arg> 
+		<value>vijaykumar</value> </constructor-arg> <constructor-arg> <value>123</value> 
+		</constructor-arg> <constructor-arg> <value>5000</value> </constructor-arg> 
+		</bean> -->
+
+
+</beans>
+
+
+
+
+
+
+
+
