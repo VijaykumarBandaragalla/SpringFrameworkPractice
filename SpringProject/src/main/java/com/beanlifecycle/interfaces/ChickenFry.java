@@ -1,9 +1,13 @@
 package com.beanlifecycle.interfaces;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class ChickenFry implements InitializingBean ,DisposableBean{
+public class ChickenFry {
+	
 	private double cost;
 
 	public double getCost() {
@@ -20,13 +24,22 @@ public class ChickenFry implements InitializingBean ,DisposableBean{
 		return "ChickenFry [cost=" + cost + "]";
 	}
 
-	public void afterPropertiesSet() throws Exception {
-		System.out.println("collecting resources to prepare fried chicken");
-		
-	}
-
-	public void destroy() throws Exception {
-		System.out.println("we ate the fried chicken....!!!!");
-	}
+//	public void afterPropertiesSet() throws Exception {
+//		System.out.println("collecting resources to prepare fried chicken");
+//		
+//	}
+//
+//	public void destroy() throws Exception {
+//		System.out.println("we ate the fried chicken....!!!!");
+//	}
 	
+	//it performs same operation as of init()
+	@PostConstruct
+	public void start() {
+		System.out.println("started preparing ");
+	}
+	@PreDestroy
+	public void stop() {
+		System.out.println("ended");
+	}
 }

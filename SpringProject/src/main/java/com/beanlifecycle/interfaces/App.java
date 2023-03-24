@@ -14,6 +14,7 @@ public class App
         System.out.println( "Project Started" );
         AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/beanlifecycle/interfaces/Config7.xml");
         ChickenFry c = context.getBean("c1",ChickenFry.class);
+        System.out.println(c);
         context.registerShutdownHook();
         System.out.println("Project Ended");
     }
