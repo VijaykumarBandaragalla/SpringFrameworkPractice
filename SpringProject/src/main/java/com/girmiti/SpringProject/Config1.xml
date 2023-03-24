@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> -->
+
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+	<!-- bean definitions here -->
+
+	<bean class="com.girmiti.SpringProject.Student" name="student1">
+
+		<property name="usn"><value>897424</value></property>
+		<property name="name"><value>Vijaykumar</value></property>
+		<property name="marks"><value>8746.87</value></property>
+
+	</bean>
+
+	<!-- p:Schema -->
+	<bean class="com.girmiti.SpringProject.Student" name="student2" p:usn="123" p:name="ajaykumar" p:marks="23.54"/>
+		<!-- <bean class="com.girmiti.SpringProject.Student" name="student2" p:usn="837" 
+			p="vijay" p="3276.76"> -->
+		<!-- using value tag <property name="usn"><value>1546545</value></property> 
+			<property name="name"><value>ajaykumar</value></property> <property name="marks"><value>632.43</value></property> -->
+
+		<!-- using value attribute <property name="usn" value="2365"/> <property 
+			name="name" value="vijaykumar"/> <property name="marks" value="32.54"/> -->
+</beans>
+
+
+
+
+
+
+
+
+
