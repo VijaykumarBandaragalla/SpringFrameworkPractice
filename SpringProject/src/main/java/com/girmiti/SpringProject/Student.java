@@ -4,6 +4,7 @@ public class Student {
 	private int usn;
 	private String name;
 	private double marks;
+	
 	public int getUsn() {
 		return usn;
 	}
@@ -29,8 +30,4 @@ public class Student {
 	public String toString() {
 		return "Student [usn=" + usn + ", name=" + name + ", marks=" + marks + "]";
 	}
-	
-	
-	
-	
 }

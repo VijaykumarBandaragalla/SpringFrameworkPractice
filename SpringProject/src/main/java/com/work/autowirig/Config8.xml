@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+<!-- 	<bean class="com.work.autowirig.Certificate" name="certi" p:cname="hibernate and springs" p:cDuration="2.5"></bean> -->
+	<bean class="com.work.autowirig.Certificate" name="certi1" p:cname="hibernate and springs" p:cDuration="2.5"></bean>
+	<bean class="com.work.autowirig.Certificate" name="certi2" p:cname="java and j2ee" p:cDuration="59.8"></bean>
+	<!-- ByName Autowiring -->
+<!--  	<bean class="com.work.autowirig.Student" name="stud1" autowire="byName"></bean> -->
+	<!-- ByType Autowiring -->
+<!-- 	<bean class="com.work.autowirig.Student" name="stud1" autowire="byType"></bean>   -->
+	<!-- constructor Autowiring -->
+	<!-- <bean class="com.work.autowirig.Student" name="stud1" autowire="constructor"></bean> -->
+	 
+	 
+	 <context:annotation-config></context:annotation-config> <!-- It activates all the annotation of spring -->
+	<!-- Annotation Autowiring -->
+	<bean class="com.work.autowirig.Student" name="stud1" autowire="constructor"></bean>
+	
+	
+
+</beans>
+
