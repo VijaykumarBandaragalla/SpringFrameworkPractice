@@ -1,5 +1,7 @@
 package com.work.StereoTypeAnnotation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +11,15 @@ public class Ipl {
 	private String teamName;
 	@Value("virat kohli")
 	private String teamCaptain;
+	
+	public List<String> getPlayersName() {
+		return playersName;
+	}
+	public void setPlayersName(List<String> playersName) {
+		this.playersName = playersName;
+	}
+	@Value("#{temp}")
+	private List<String> playersName; //Spring Expression Language
 	public String getTeamName() {
 		return teamName;
 	}
@@ -23,7 +34,7 @@ public class Ipl {
 	}
 	@Override
 	public String toString() {
-		return "Ipl [teamName=" + teamName + ", teamCaptain=" + teamCaptain + "]";
+		return "Ipl [teamName=" + teamName + ", teamCaptain=" + teamCaptain + ", playersName=" + playersName + "]";
 	}
 	public Ipl() {
 	}
