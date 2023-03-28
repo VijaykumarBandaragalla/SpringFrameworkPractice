@@ -45,4 +45,11 @@
 	<property name="name" ref="z"/>
 	<property name="dpdrop" ref="i"/>
 	</bean>
+	
+	<bean class="com.work.standaloneCollection.Emp" name="emp2">
+	<property name="vehicle" ref="x"/>
+	<property name="email" ref= "y"/>
+	<property name="name" ref="z"/>
+	<property name="dpdrop" ref="i"/>
+	</bean>
 </beans>

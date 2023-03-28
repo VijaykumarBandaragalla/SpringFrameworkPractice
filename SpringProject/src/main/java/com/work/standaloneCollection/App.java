@@ -27,6 +27,20 @@ public class App
         System.out.println(a.getDpdrop());
         System.out.println(a.getDpdrop().getClass().getName());
         
+        System.err.println("we can use declared collection n no.of times we want");
+        Emp b =context.getBean("emp2",Emp.class);
+        System.out.println("===================================================================");
+        System.out.println(b.getVehicle());
+        System.out.println(b.getVehicle().getClass().getName());
+        System.out.println("===================================================================");
+        System.out.println(b.getEmail());
+        System.out.println(b.getEmail().getClass().getName());
+        System.out.println("===================================================================");
+        System.out.println(b.getName());
+        System.out.println(b.getName().getClass().getName());
+        System.out.println("===================================================================");
+        System.out.println(b.getDpdrop());
+        System.out.println(b.getDpdrop().getClass().getName());
         System.out.println("Project Ended");
     }
 }
