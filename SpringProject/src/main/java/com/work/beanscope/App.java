@@ -3,12 +3,16 @@ package com.work.beanscope;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.work.StereoTypeAnnotation.Ipl;
+
 /**
  * Hello world!
  *
  */
-public class App 
-{
+public class App {
+	
+	
+	// Singelton Scope Example
     public static void main( String[] args )
     {
         System.out.println( "Project Started" );

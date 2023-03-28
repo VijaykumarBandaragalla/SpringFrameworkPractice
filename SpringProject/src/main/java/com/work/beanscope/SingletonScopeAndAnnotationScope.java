@@ -1,5 +1,7 @@
 package com.work.beanscope;
 
+
+
 public class SingletonScopeAndAnnotationScope {
 	private int usn;
 	private String name;
@@ -25,6 +27,8 @@ public class SingletonScopeAndAnnotationScope {
 	}
 	
 	public SingletonScopeAndAnnotationScope() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public String toString() {
