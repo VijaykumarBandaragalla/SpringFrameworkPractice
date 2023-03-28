@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+
+	<bean class="com.girmiti.CollectionSpring.Emp" name="emp1">
+		<property name="vehicle">
+			<list>
+				<value>BMW</value>
+				<value>BMTC</value>
+				<value>Maruti800</value>
+				<value>bmw</value>
+			</list>
+		</property>
+		<property name="email">
+			<set>
+				<value>vijay@123</value>
+				<value>ajay@187</value>
+				<value>suraj@65</value>
+			</set>
+		</property>
+		<property name="name">
+			<map>
+				<entry key="raj" value="kumar" />
+				<entry key="ram" value="manish" />
+				<entry key="ras" value="kesh" />
+			</map>
+		</property>
+
+	</bean>
+</beans>
+
+
+
+
+
+
+
+
