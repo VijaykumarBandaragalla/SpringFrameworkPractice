@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+	<!-- bean definitions here -->
+
+	<bean class="com.work.beanscope.SingletonScopeAndAnnotationScope" name="student1" scope="singleton">
+	<!-- <bean class="com.work.beanscope.SingletonScopeAndAnnotationScope" name="student1" scope="singleton"> -->
+	<!-- here we get 2 differrent objects bcz we used scope as prototype -->
+		<property name="usn"><value>897424</value></property> 
+		<property name="name"><value>Vijaykumar</value></property>
+		<property name="marks"><value>8746.87</value></property>
+
+	</bean>
+	
+
+</beans>
