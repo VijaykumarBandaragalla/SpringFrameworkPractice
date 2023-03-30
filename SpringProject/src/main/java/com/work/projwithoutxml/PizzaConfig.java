@@ -7,10 +7,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 //@ComponentScan(basePackages = "com.work.projwithoutxml")
 public class PizzaConfig {
-//	@Bean()
+	@Bean()
+	public Pepsi getPepsi() {
+		Pepsi c = new Pepsi(); 
+		return c;
+		
+	}
 	@Bean(name= {"a","b","c"})
 	public Pizza getPizza() {
-		Pizza p = new Pizza();
+		Pizza p = new Pizza(getPepsi());
 		return p;
 	}
 }
