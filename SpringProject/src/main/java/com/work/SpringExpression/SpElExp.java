@@ -1,6 +1,5 @@
 package com.work.SpringExpression;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -54,8 +53,6 @@ public class SpElExp {
 	public void setStaticVariable(double staticVariable) {
 		this.staticVariable = staticVariable;
 	}
-
-	
 	
 	public int getX() {
 		return x;
