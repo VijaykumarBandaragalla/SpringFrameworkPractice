@@ -1,4 +1,4 @@
-package com.girmiti.setterinjection;
+package com.work.setterinjection;
 
 public class A {
 	@Override

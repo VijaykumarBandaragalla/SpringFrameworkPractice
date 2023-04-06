@@ -1,4 +1,4 @@
-package com.work.SpringExpression;
+package com.work.springexpression;
 
 
 import org.springframework.beans.factory.annotation.Value;

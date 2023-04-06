@@ -1,4 +1,4 @@
-package com.girmiti.SpringProject;
+package com.work.SpringProject;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

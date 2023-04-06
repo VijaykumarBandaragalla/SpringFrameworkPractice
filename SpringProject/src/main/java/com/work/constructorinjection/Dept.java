@@ -1,4 +1,4 @@
-package com.girmiti.constructorinjection;
+package com.work.constructorinjection;
 
 public class Dept {
 	private String dname;

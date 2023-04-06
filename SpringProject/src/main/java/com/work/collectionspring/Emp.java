@@ -1,4 +1,4 @@
-package com.girmiti.CollectionSpring;
+package com.work.collectionspring;
 
 import java.util.List;
 import java.util.Map;

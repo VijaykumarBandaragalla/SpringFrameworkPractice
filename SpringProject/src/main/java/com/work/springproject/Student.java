@@ -1,4 +1,4 @@
-package com.girmiti.SpringProject;
+package com.work.springproject;
 
 public class Student {
 	private int usn;

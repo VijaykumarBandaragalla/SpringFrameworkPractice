@@ -1,4 +1,4 @@
-package com.girmiti.SpringProject;
+package com.work.springproject;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
